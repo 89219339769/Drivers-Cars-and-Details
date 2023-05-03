@@ -21,7 +21,7 @@ public class DriverClient extends BaseClient {
     @Autowired
     public DriverClient(@Value("${shareit-server.url}") String serverUrl, RestTemplateBuilder builder) {
         super(builder.uriTemplateHandler(new DefaultUriBuilderFactory(serverUrl + API_PREFIX))
-                .requestFactory(HttpComponentsClientHttpRequestFactory::new)
+
                     .build());
     }
 
