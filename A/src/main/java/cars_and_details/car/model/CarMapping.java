@@ -1,5 +1,7 @@
 package cars_and_details.car.model;
 
+import cars_and_details.car.model.dto.CarDto;
+
 public class CarMapping {
 
 

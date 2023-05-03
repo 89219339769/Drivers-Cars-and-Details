@@ -2,7 +2,7 @@ package cars_and_details.car_detail;
 
 import cars_and_details.car.CarRepo;
 import cars_and_details.car.model.Car;
-import cars_and_details.car.model.CarDto;
+import cars_and_details.car.model.dto.CarDto;
 import cars_and_details.car.model.CarMapping;
 import cars_and_details.car_detail.model.CarDetail;
 import cars_and_details.detail.DetailRepo;

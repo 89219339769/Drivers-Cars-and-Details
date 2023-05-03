@@ -1,4 +1,4 @@
-package cars_and_details.car.model;
+package cars_and_details.car.model.dto;
 
 import cars_and_details.detail.model.Detail;
 import jakarta.persistence.Column;

@@ -9,4 +9,12 @@
   <artifactId>B</artifactId>
   <name>Archetype - B</name>
   <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>com.example</groupId>
+      <artifactId>A</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
 </project>

@@ -2,7 +2,7 @@ package cars_and_details.car;
 
 
 import cars_and_details.car.model.Car;
-import cars_and_details.car.model.CarDto;
+import cars_and_details.car.model.dto.CarDto;
 import cars_and_details.car.model.CarMapping;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
