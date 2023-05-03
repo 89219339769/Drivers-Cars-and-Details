@@ -23,10 +23,10 @@ public class CarServiceImpl implements CarService {
         return carDto;
     }
 
-    @Override
-    public CarDto addDetails(Long carId, Long detailId) {
-
-
-        return null;
-    }
+//    @Override
+//    public CarDto addDetails(Long carId, Long detailId) {
+//
+//
+//        return null;
+//    }
 }

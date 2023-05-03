@@ -7,5 +7,5 @@ import cars_and_details.car.model.CarDto;
 public interface CarService {
     CarDto saveCar(Car car);
 
-    CarDto addDetails(Long carId, Long detailId);
+
 }

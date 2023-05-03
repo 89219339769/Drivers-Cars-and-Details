@@ -5,4 +5,6 @@ import cars_and_details.detail.model.Detail;
 
 public interface DetailService {
     Detail saveDetails(Detail detail);
+
+    Detail updateDetails(Detail detail);
 }

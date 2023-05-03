@@ -18,4 +18,15 @@ public class DetailServiceImpl implements DetailService{
     public Detail saveDetails(Detail detail) {
        return detailRepo.save(detail);
     }
+
+    @Override
+    public Detail updateDetails(Detail detail) {
+
+        Detail detailForUpdate = detailRepo.findById(detail.getId())
+                                           .orElseThrow(() -> new RuntimeException("не найдена деталь с id: " + detail.getId()+
+                                                   "обновить нельзя"));
+        detailForUpdate.setType(detail.getType());
+        detailForUpdate.setSerialNumber(detail.getSerialNumber());
+        return detailRepo.save(detail);
+    }
 }

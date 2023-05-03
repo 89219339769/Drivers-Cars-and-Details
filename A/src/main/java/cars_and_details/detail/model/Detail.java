@@ -32,7 +32,7 @@ public class Detail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "serial_number", length = 20, nullable = false)
+    @Column(name = "serial_number", length = 20, nullable = false, unique = true)
     private int serialNumber;
 
     @Enumerated(EnumType.STRING)
