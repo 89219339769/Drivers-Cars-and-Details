@@ -30,7 +30,7 @@ public class Bill {
     private Long id;
 
     @Column(length = 100, nullable = false)
-    private Integer sum;
+    private Double sum;
 
     @ManyToOne
     @JoinColumn(name = "driver_id", referencedColumnName = "id", nullable = false)
