@@ -8,4 +8,5 @@ public interface CarService {
     CarDto saveCar(Car car);
 
 
+    Car findById(Long carId);
 }

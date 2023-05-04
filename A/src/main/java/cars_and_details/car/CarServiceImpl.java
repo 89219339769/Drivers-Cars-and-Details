@@ -23,6 +23,11 @@ public class CarServiceImpl implements CarService {
         return carDto;
     }
 
+    @Override
+    public Car findById(Long carId) {
+        return carRepo.findById(carId).orElseThrow(()->new RuntimeException("не найдена машина с номером "+ carId));
+    }
+
 //    @Override
 //    public CarDto addDetails(Long carId, Long detailId) {
 //

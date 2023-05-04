@@ -4,12 +4,15 @@ import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Builder;
 import lombok.Data;
+import org.springframework.http.ResponseEntity;
 
 import java.time.LocalDate;
 
 @Data
-public class DriverDto {
+@Builder
+public class DriverDto  {
 
 
     private Long id;
@@ -31,6 +34,6 @@ public class DriverDto {
     private Integer drivingExperience;
 
 
-    private Integer carId;
+    private Long carId;
 
 }

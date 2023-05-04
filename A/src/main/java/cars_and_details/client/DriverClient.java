@@ -36,4 +36,13 @@ public class DriverClient extends BaseClient {
     public ResponseEntity<Object> postDriver(DriverDto driverDto) {
         return post("", driverDto);
     }
+
+
+    public ResponseEntity<Object> getDriver(Long driverId) {
+         return get("/" + driverId);
+
+
+
+    }
+
 }

@@ -44,11 +44,11 @@ public class Driver {
     @Column(name = "date_of_Birth", nullable = false)
     private LocalDate dateOfBirth;
 
-    @Column(name = "driving_experience")
+    @Column(name = "driving_experience", nullable = false)
     private Integer drivingExperience;
 
 
     @Column(name = "car_id")
-    private Integer carId;
+    private Long carId;
 
 }
