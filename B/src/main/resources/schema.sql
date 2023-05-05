@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS drivers (
                                      full_name VARCHAR(100) NOT NULL,
                                      passport VARCHAR(10) NOT NULL,
                                      car_license_category VARCHAR(1),
-                                     date_of_Birth  TIMESTAMP NOT NULL,
+                                     date_of_Birth  date NOT NULL,
                                      driving_experience Integer,
                                      CONSTRAINT drivers_pk PRIMARY KEY (id),
                                      CONSTRAINT passport UNIQUE (passport),

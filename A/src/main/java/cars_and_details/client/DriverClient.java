@@ -25,13 +25,6 @@ public class DriverClient extends BaseClient {
                     .build());
     }
 
-//    @Autowired
-//    public ApplicationClient(@Value("${shareit-server.url}") String serverUrl, RestTemplateBuilder builder) {
-//        super(builder.uriTemplateHandler(new DefaultUriBuilderFactory(serverUrl + API_PREFIX))
-//                     .requestFactory(HttpComponentsClientHttpRequestFactory::new)
-//                     .build());
-//    }
-
 
     public ResponseEntity<Object> postDriver(DriverDto driverDto) {
         return post("", driverDto);
@@ -40,8 +33,6 @@ public class DriverClient extends BaseClient {
 
     public ResponseEntity<Object> getDriver(Long driverId) {
          return get("/" + driverId);
-
-
 
     }
 

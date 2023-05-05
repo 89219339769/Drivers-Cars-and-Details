@@ -19,16 +19,16 @@ public class CarController {
     private final CarService carService;
     private final CarDetailsService carDetailsService;
 
-    //создание автомобиля
+
     @PostMapping
     public CarDto create(@RequestBody Car car) {
         return carService.saveCar(car);
     }
 
 
-    //установка деталий
     @PostMapping("/{carId}/{detailId}")
     public CarDto addDetails (@PathVariable Long carId, @PathVariable Long detailId) {
         return carDetailsService.addDetails(carId, detailId);
     }
+
 }
